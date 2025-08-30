@@ -4,7 +4,7 @@ from google.oauth2 import service_account
 from google.auth.transport.requests import Request
 
 # Path to your Firebase service account JSON file
-SERVICE_ACCOUNT_FILE = 'firebase/service-account.json'
+SERVICE_ACCOUNT_FILE = 'service-account.json'
 
 # Your Firebase project ID
 PROJECT_ID = 'fir-send-notification-e6a29'
@@ -48,3 +48,4 @@ def send_fcm_message():
 
 if __name__ == '__main__':
     send_fcm_message()
+
