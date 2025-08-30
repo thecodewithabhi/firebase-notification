@@ -1,7 +1,7 @@
 import firebase_admin
 from firebase_admin import credentials, messaging
 
-cred = credentials.Certificate('firebase/service-account.json')
+cred = credentials.Certificate('service-account.json')
 firebase_admin.initialize_app(cred)
 
 def send_notification_to_topic(title, body, topic='news'):
@@ -14,3 +14,4 @@ def send_notification_to_topic(title, body, topic='news'):
 
 # Example usage
 send_notification_to_topic("Hello!", "This is a message from Directus payload")
+
