@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 PROJECT_ID = 'fir-send-notification-e6a29' 
-SERVICE_ACCOUNT_FILE = 'firebase/service-account.json'
+SERVICE_ACCOUNT_FILE = 'service-account.json'
 SCOPES = ["https://www.googleapis.com/auth/firebase.messaging"]
 
 if not PROJECT_ID:
@@ -102,3 +102,4 @@ def send():
 if __name__ == "__main__":
     # Use 0.0.0.0 if you want to receive calls from outside your machine
     app.run(host="127.0.0.1", port=5000, debug=True)
+
